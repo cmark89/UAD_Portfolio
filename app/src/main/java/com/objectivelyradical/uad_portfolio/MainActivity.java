@@ -1,9 +1,12 @@
 package com.objectivelyradical.uad_portfolio;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,5 +36,35 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void launchSpotifyStreamer(View view) {
+        showToast("Under development.  Maybe forever.");
+    }
+
+    public void launchFootballScores(View view) {
+        showToast("I don't know how football works, and I refuse to learn.");
+    }
+
+    public void launchCyberLibrarian(View view) {
+        showToast("TODO: make a piercing sound whenever this app is launched.");
+    }
+
+    public void launchBuildItBigger(View view) {
+        showToast("The most exciting application of them all!");
+    }
+
+    public void launchXyzReader(View view) {
+        showToast("ZYX!");
+    }
+
+    public void launchCapstone(View view) {
+        showToast("Draft idea: flagpole-sitting simulator");
+    }
+
+    private void showToast(String text) {
+        Context c = getApplicationContext();
+        int duration = Toast.LENGTH_SHORT;
+        Toast.makeText(c, text, duration).show();
     }
 }
