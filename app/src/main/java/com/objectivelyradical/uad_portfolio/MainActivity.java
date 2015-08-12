@@ -39,27 +39,27 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void launchSpotifyStreamer(View view) {
-        showToast("Under development.  Maybe forever.");
+        showToast(getString(R.string.button_1_toast));
     }
 
     public void launchFootballScores(View view) {
-        showToast("I don't know how football works, and I refuse to learn.");
+        showToast(getString(R.string.button_2_toast));
     }
 
     public void launchCyberLibrarian(View view) {
-        showToast("TODO: make a piercing sound whenever this app is launched.");
+        showToast(getString(R.string.button_3_toast));
     }
 
     public void launchBuildItBigger(View view) {
-        showToast("The most exciting application of them all!");
+        showToast(getString(R.string.button_4_toast));
     }
 
     public void launchXyzReader(View view) {
-        showToast("ZYX!");
+        showToast(getString(R.string.button_5_toast));
     }
 
     public void launchCapstone(View view) {
-        showToast("Draft idea: flagpole-sitting simulator");
+        showToast(getString(R.string.button_6_toast));
     }
 
     private void showToast(String text) {

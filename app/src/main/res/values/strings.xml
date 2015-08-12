@@ -9,4 +9,10 @@
     <string name="button_4_text">Build it Bigger</string>
     <string name="button_5_text">XYZ Reader</string>
     <string name="button_6_text">Capstone</string>
+    <string name="button_1_toast">Under development.  Maybe forever.</string>
+    <string name="button_2_toast">I don\'t know how football works, and I refuse to learn.</string>
+    <string name="button_3_toast">TODO: make a piercing sound whenever this app is launched.</string>
+    <string name="button_4_toast">The most exciting application of them all!</string>
+    <string name="button_5_toast">ZYX!</string>
+    <string name="button_6_toast">Draft idea: flagpole-sitting simulator</string>
 </resources>
