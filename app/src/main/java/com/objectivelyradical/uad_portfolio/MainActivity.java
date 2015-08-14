@@ -6,14 +6,27 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class MainActivity extends AppCompatActivity {
+
+    HashMap<String,String> textMap = new HashMap<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
+        textMap.put(getString(R.string.button_1_text), getString(R.string.button_1_toast));
+        textMap.put(getString(R.string.button_2_text), getString(R.string.button_2_toast));
+        textMap.put(getString(R.string.button_3_text), getString(R.string.button_3_toast));
+        textMap.put(getString(R.string.button_4_text), getString(R.string.button_4_toast));
+        textMap.put(getString(R.string.button_5_text), getString(R.string.button_5_toast));
+        textMap.put(getString(R.string.button_6_text), getString(R.string.button_6_toast));
     }
 
     @Override
@@ -38,33 +51,12 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void launchSpotifyStreamer(View view) {
-        showToast(getString(R.string.button_1_toast));
-    }
-
-    public void launchFootballScores(View view) {
-        showToast(getString(R.string.button_2_toast));
-    }
-
-    public void launchCyberLibrarian(View view) {
-        showToast(getString(R.string.button_3_toast));
-    }
-
-    public void launchBuildItBigger(View view) {
-        showToast(getString(R.string.button_4_toast));
-    }
-
-    public void launchXyzReader(View view) {
-        showToast(getString(R.string.button_5_toast));
-    }
-
-    public void launchCapstone(View view) {
-        showToast(getString(R.string.button_6_toast));
-    }
-
-    private void showToast(String text) {
+    public void showToast(View view) {
+        String buttonText = (String)((Button)view).getText();
+        String text = textMap.get(buttonText);
         Context c = getApplicationContext();
         int duration = Toast.LENGTH_SHORT;
+
         Toast.makeText(c, text, duration).show();
     }
 }

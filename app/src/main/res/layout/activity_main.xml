@@ -1,15 +1,14 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
 
         <TextView
             android:layout_width="wrap_content"
@@ -27,59 +26,42 @@
         <Button
             style="@style/ObjectivelyRadical"
             android:text="@string/button_1_text"
-            android:id="@+id/button"
-            android:onClick="launchSpotifyStreamer"/>
+            android:id="@+id/button"/>
 
 
-        <Space
-            android:layout_width="20px"
-            android:layout_height="20px" />
+        <Space style="@style/buttonSpacing" />
 
         <Button
             style="@style/ObjectivelyRadical"
             android:text="@string/button_2_text"
-            android:id="@+id/button2"
-            android:onClick="launchFootballScores"/>
+            android:id="@+id/button2"/>
 
-        <Space
-            android:layout_width="20px"
-            android:layout_height="20px" />
+        <Space style="@style/buttonSpacing" />
 
         <Button
             style="@style/ObjectivelyRadical"
             android:text="@string/button_3_text"
-            android:id="@+id/button3"
-            android:onClick="launchCyberLibrarian"/>
+            android:id="@+id/button3"/>
 
-        <Space
-            android:layout_width="20px"
-            android:layout_height="20px" />
+        <Space style="@style/buttonSpacing" />
 
         <Button
             style="@style/ObjectivelyRadical"
             android:text="@string/button_4_text"
-            android:id="@+id/button4"
-            android:onClick="launchBuildItBigger"/>
+            android:id="@+id/button4"/>
 
-        <Space
-            android:layout_width="20px"
-            android:layout_height="20px"/>
+        <Space style="@style/buttonSpacing" />
 
         <Button
             style="@style/ObjectivelyRadical"
             android:text="@string/button_5_text"
-            android:id="@+id/button5"
-            android:onClick="launchXyzReader"/>
+            android:id="@+id/button5"/>
 
-        <Space
-            android:layout_width="20px"
-            android:layout_height="20px" />
+        <Space style="@style/buttonSpacing" />
 
         <Button
             style="@style/ObjectivelyRadical"
             android:text="@string/button_6_text"
-            android:id="@+id/button6"
-            android:onClick="launchCapstone"/>
-    </LinearLayout>
+            android:id="@+id/button6"/>
 
-</RelativeLayout>
+</LinearLayout>
